@@ -1,4 +1,5 @@
-package PACKAGE_NAME;
-
-public class InvalidIndexException {
+public class InvalidIndexException extends RuntimeException {
+    public InvalidIndexException(String message) {
+        super(message);
+    }
 }
